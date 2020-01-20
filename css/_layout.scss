@@ -2,13 +2,10 @@
 -------------------------------------------------- */
 // Basic HTML tag w/o any classes or play a specific role
 // for example typography, legend, cards, etc.
-
-body {
-    margin: 0 auto;
+.body__container {
     width: 75%;
+    margin: 0 auto;
 }
-
-
 
 /* Links
   -------------------------------------------------- */

@@ -1,18 +1,11 @@
-/* Tooltip
-  -------------------------------------------------- */
-.tooltip {
-  display: inline;
-  border-bottom: 1px dotted #323232;
-}
-
 .material-tooltip {
   padding: 10px 8px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   z-index: 2000;
   background-color: transparent;
   border-radius: 2px;
   color: #fff;
-  min-height: 6px;
+  min-height: 36px;
   line-height: 120%;
   opacity: 0;
   position: absolute;
