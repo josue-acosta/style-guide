@@ -1,0 +1,23 @@
+/* sections
+-------------------------------------------------- */
+.page-header {
+    padding: 25px 0;
+}
+
+.straight-link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.dot-two {
+    padding: 7rem 0 10rem;
+    border-top: 1px solid #ddd;
+}
+
+
+@media (min-width: 550px) {
+    .page-header {
+        padding: 70px 0 0;
+    }
+}

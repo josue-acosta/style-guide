@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Step One</title>
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Roboto:300,400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,19 +17,19 @@
         <nav class="navigation">
             <ul class="navigation__menu-list">
                 <li>
-                    <a href="http://127.0.0.1:5500/landing-page.html">
+                    <a href="http://127.0.0.1:5500/pages/landing-page.html">
                         <div class="navigation--title">home</div>
                         <p>where the heart is</p>
                     </a>
                 </li>
                 <li>
                     <a href="http://127.0.0.1:5500/index.html">
-                        <div class="navigation--title">chapter 1</div>
+                        <div class="navigation--title">step 1</div>
                         <p>in the beginning</p>
                     </a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:5500/type.html">
+                    <a href="http://127.0.0.1:5500/pages/type.html">
                         <div class="navigation--title">typography</div>
                         <p>your face</p>
                     </a>
@@ -40,8 +39,8 @@
     </section>
 
     <section class="page-header">
-        <h1>Flask by Example</h1>
-        <div class="overline">Published: Atl. Web Exch. | Jan. 17, 2020</div>
+        <h1>Step One</h1>
+        <div class="overline">1/8 of Python Word Counter</div>
 
         <p class="objective-paragraph">Welcome! The <strong>objective</strong> of this tutorial is to build a Flask app
             that calculates
@@ -49,8 +48,8 @@
             text from a given URL.</p>
     </section>
 
-    <section class="legend">
-        <h2 class="legend__title">Table of Contents</h2>
+    <section class="table-of-contents">
+        <h2 class="table-of-contents__title">Table of Contents</h2>
         <ul>
             <li><a href="http://127.0.0.1:5500/#project-setup">Project Setup</a></li>
             <li><a href="http://127.0.0.1:5500/#product-workflow">Staging/Production Workflow</a></li>
@@ -95,25 +94,25 @@
                     <p>For the initial setup, you should have some familiarity with the following tools:</p>
 
                     <ul>
-                        <li>Virtualenv -
+                        <li class="inine-list">Virtualenv -
                             <a class="straight-link" href="https://realpython.com/python-virtual-environments-a-primer">
                                 Learn More
                                 <i class="material-icons md-18">open_in_new</i>
                             </a>
                         </li>
-                        <li>Flask -
+                        <li class="inine-list">Flask -
                             <a class="straight-link" href="http://flask.pocoo.org/">
                                 Learn More
                                 <i class="material-icons md-18">open_in_new</i>
                             </a>
                         </li>
-                        <li>git/Github -
+                        <li class="inine-list">git/Github -
                             <a class="straight-link" href="https://realpython.com/python-git-github-intro/">
                                 Learn More
                                 <i class="material-icons md-18">open_in_new</i>
                             </a>
                         </li>
-                        <li>Heroku (basics) -
+                        <li class="inine-list">Heroku (basics) -
                             <a class="straight-link"
                                 href="https://devcenter.heroku.com/articles/getting-started-with-python">
                                 Learn More
@@ -236,6 +235,11 @@
                             server<span class="tooltiptext">Mac: Ctrl+C Windows: Ctrl+C</span>
                         </div> when you're done.
                     </p>
+                </div>
+
+                <div class="card__button">
+                    <button>button</button>
+                    <button>button</button>
                 </div>
             </div>
 
@@ -495,7 +499,6 @@ config.ProductionConfi
             <p>Be sure to remove print(os.environ['APP_SETTINGS']) when done, commit, and push back up to your various
                 environments.</p>
         </div>
-
         <div class="dot-two">
             <h2 id="conclusion">Conclusion</h2>
             <p>With the setup out of the way, we're going to start to build out the word counting functionality of this

@@ -1,0 +1,822 @@
+@charset "UTF-8";
+/* Buttons
+  -------------------------------------------------- */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+
+.callout {
+  margin: 1.75rem 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.callout__content {
+  padding: 1rem 2rem;
+}
+
+.callout_get_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: dodgerblue;
+}
+
+.callout_get_code i {
+  font-size: 3.5rem;
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  .callout-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+}
+
+.card {
+  border-radius: 2px;
+  padding: 2rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__title--main {
+  display: inline-block;
+  font-family: "Roboto Mono", sans-serif;
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.card__image {
+  padding: 3rem 0 1rem;
+}
+
+.card__image img {
+  display: block;
+  width: 100%;
+}
+
+.card__button {
+  border-top: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+.card__button button:not(:first-child) {
+  margin-left: 2rem;
+}
+
+/* Forms
+  -------------------------------------------------- */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+/* Layout
+-------------------------------------------------- */
+body {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Links
+  -------------------------------------------------- */
+a {
+  color: dodgerblue;
+}
+
+/* Lists
+  -------------------------------------------------- */
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Code
+  -------------------------------------------------- */
+code {
+  padding: 2rem;
+  display: block;
+  overflow: scroll;
+  white-space: nowrap;
+  background: #212121;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* To Do
+-------------------------------------------------- */
+/*
+Getting started
+    - what is it
+    - setting up your html
+        - HTML
+        - charset
+        - mobile first
+        - ie compatable
+
+    - inlcuding css in your package
+        - css
+        - js
+        - html templating
+
+CSS
+    - global css
+    - html elements
+    - extensible classes
+    - grid system
+    - global normalization
+
+    + container
+    + color pallete
+    + grid system
+        - intro
+        - media queries
+        - grid options
+            - mobile and desktop
+            - cards
+            - naming grid areas
+    + typography
+        - heading
+        - subheading
+        - body copy
+        - alignment
+        - transform
+        - block qoutes
+        - list
+            - styled
+            - order
+            - unordered
+        - description
+        - footnotes
+        - dashboard / tabs
+        - code
+        - tables
+            - striped
+            - bordered
+            - hover
+            - condensed
+        - forms
+        - inputs
+        - checkboxes
+            - radio cards
+            - radio box tables
+            - selects
+            - parent / child
+        - messages ( success, fail, warning )
+        - help text
+        - buttons
+        - images
+        - helper class
+            - bg-light-gray
+        - icons
+        - responsive utilities
+*/
+/* Table of Content
+-------------------------------------------------- */
+.table-of-contents ul,
+.table-of-contents ol {
+  list-style: none;
+}
+
+.table-of-contents li {
+  line-height: 1.6;
+}
+
+.table-of-contents__title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 2.4rem 0 .4rem;
+}
+
+/* Inline list
+-------------------------------------------------- */
+.inine-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.6;
+}
+
+.inine-list a {
+  padding-left: 10px;
+}
+
+/* Material Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.micro-step {
+  margin-top: 3rem;
+}
+
+.micro-step p {
+  margin-top: 0;
+}
+
+.micro-step strong {
+  display: block;
+  margin-top: 2rem;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.navigation__menu-list {
+  list-style: none;
+}
+
+.navigation__menu-list li {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.navigation__menu-list p {
+  margin-bottom: 0;
+}
+
+.navigation__menu-list li:hover {
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.navigation__menu-list li:last-child {
+  margin-right: 0;
+}
+
+.navigation__menu-list .navigation--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212121;
+  font-size: 1.8rem;
+  margin-bottom: .75rem;
+}
+
+.navigation__menu-list a:link,
+.navigation__menu-list a:visited {
+  display: inline-block;
+  border-top: 1px solid #111111;
+  padding-top: .8em;
+  text-align: left;
+  color: #333333;
+  text-decoration: none;
+}
+
+@media (min-width: 415px) {
+  .navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navigation__menu-list li {
+    display: inline-block;
+  }
+}
+
+.objective-paragraph {
+  padding: 0 0 25px;
+}
+
+@media (min-width: 550px) {
+  .objective-paragraph {
+    padding: 25px 0 50px;
+  }
+}
+
+/* sections
+-------------------------------------------------- */
+.page-header {
+  padding: 25px 0;
+}
+
+.straight-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dot-two {
+  padding: 7rem 0 10rem;
+  border-top: 1px solid #ddd;
+}
+
+@media (min-width: 550px) {
+  .page-header {
+    padding: 70px 0 0;
+  }
+}
+
+/* Tables
+  -------------------------------------------------- */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  border-bottom: 1px solid #666666;
+}
+
+td {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/* Tooltip
+  -------------------------------------------------- */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Typography
+-------------------------------------------------- */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.45;
+  font-weight: 300;
+  font-family: "Roboto Mono", sans-serif;
+  color: #333;
+}
+
+/* Font Headers
+  -------------------------------------------------- */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212121;
+  margin-bottom: 1rem;
+}
+
+.sub-h1,
+.sub-h2,
+.sub-h3,
+.sub-h4,
+.sub-h5,
+.sub-h6 {
+  display: block;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1,
+.h1,
+.sub-h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+}
+
+h2,
+.h2,
+.sub-h2 {
+  font-size: 3.2rem;
+  line-height: 1.25;
+  margin-top: 3rem;
+}
+
+h3,
+.h3,
+.sub-h3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+h4,
+.h4,
+.sub-h4 {
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+h5,
+.h5,
+.sub-h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h6,
+.h6,
+.sub-h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 1.25rem;
+}
+
+/* Larger than tablet */
+@media (min-width: 550px) {
+  h1,
+  .h1,
+  .sub-h1 {
+    font-size: 6.0rem;
+  }
+  h2,
+  .h2,
+  .sub-h2 {
+    font-size: 2.8rem;
+  }
+  h3,
+  .h3,
+  .sub-h3 {
+    font-size: 2.4rem;
+  }
+  h4,
+  .h4,
+  .sub-h4 {
+    font-size: 2rem;
+  }
+  h5,
+  .h5,
+  .sub-h5 {
+    font-size: 1.8rem;
+  }
+  h6,
+  .h6,
+  .sub-h6 {
+    font-size: 1.5rem;
+  }
+  .overline {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+/* 
+  -------------------------------------------------- */
+/* Margin
+  -------------------------------------------------- */
+.utl-margin-top-30 {
+  margin-top: 3rem;
+}
+
+.utl-margin-bottom-30 {
+  margin-bottom: 3rem;
+}
+
+.utl-margin-top-60 {
+  margin-top: 6rem;
+}
+
+.utl-margin-bottom-60 {
+  margin-bottom: 6rem;
+}
+
+.utl-margin-vert-30 {
+  margin: 3rem 0;
+}
+
+.utl-margin-vert-60 {
+  margin: 6rem 0;
+}
+
+/* Padding
+  -------------------------------------------------- */
+.utl-padding-top-5 {
+  padding-top: 5rem;
+}
+
+.utl-padding-bottom-10 {
+  padding-bottom: 10rem;
+}
+
+/* Misc.
+  -------------------------------------------------- */
+.rtl {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+/*# sourceMappingURL=main.css.map */
