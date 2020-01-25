@@ -1,8 +1,3 @@
-ul:not(.browser-default) {
-    padding-left: 0;
-    list-style-type: none;
-}
-
 .collapsible {
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -11,15 +6,12 @@ ul:not(.browser-default) {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul:not(.browser-default)>li {
-    list-style-type: none;
-}
-
 .collapsible-header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     line-height: 1.5;
@@ -34,6 +26,28 @@ ul:not(.browser-default)>li {
     display: inline-block;
     text-align: center;
     margin-right: 1rem;
+}
+
+.collapsible-header:focus {
+    outline: 0
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: none;
+}
+
+.collapsible-title {
+    display: inline-block;
+    font-family: "Roboto Mono", sans-serif;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.3;
 }
 
 .collapsible-body {
