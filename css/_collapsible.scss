@@ -7,6 +7,10 @@
 }
 
 .collapsible-header {
+    &:focus {
+        outline: 0
+    }
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -18,18 +22,14 @@
     padding: 1rem;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-}
 
-.collapsible-header i {
-    width: 2rem;
-    font-size: 1.6rem;
-    display: inline-block;
-    text-align: center;
-    margin-right: 1rem;
-}
-
-.collapsible-header:focus {
-    outline: 0
+    i {
+        width: 2rem;
+        font-size: 1.6rem;
+        display: inline-block;
+        text-align: center;
+        margin-right: 1rem;
+    }
 }
 
 ul:not(.browser-default) {

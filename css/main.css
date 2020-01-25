@@ -154,7 +154,7 @@ input[type="button"].button-primary:focus {
 }
 
 .card__button button:not(:first-child) {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .collapsible {
@@ -181,16 +181,16 @@ input[type="button"].button-primary:focus {
   border-bottom: 1px solid #ddd;
 }
 
+.collapsible-header:focus {
+  outline: 0;
+}
+
 .collapsible-header i {
   width: 2rem;
   font-size: 1.6rem;
   display: inline-block;
   text-align: center;
   margin-right: 1rem;
-}
-
-.collapsible-header:focus {
-  outline: 0;
 }
 
 ul:not(.browser-default) {
@@ -356,6 +356,18 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre;
+}
+
+/* Horizontal Rule
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin: 7.5rem 0;
+  border-width: 0;
+  border-top: 1px solid #ddd;
+}
+
+hr:first {
+  margin: 10rem 0 7rem;
 }
 
 /* Media Queries
@@ -1295,15 +1307,5 @@ h6,
 .rtl {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-}
-
-hr {
-  margin: 7rem 0 10rem;
-  border-width: 0;
-  border-top: 1px solid #ddd;
-}
-
-hr:first {
-  margin: 10rem 0 7rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,8 @@
     margin: 0 auto;
 }
 
+
+
 /* Links
   -------------------------------------------------- */
 a {
@@ -61,6 +63,20 @@ pre>code {
     display: block;
     padding: 1rem 1.5rem;
     white-space: pre;
+}
+
+
+
+/* Horizontal Rule
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+    margin: 7.5rem 0;
+    border-width: 0;
+    border-top: 1px solid #ddd;
+}
+
+hr:first {
+    margin: 10rem 0 7rem;
 }
 
 
