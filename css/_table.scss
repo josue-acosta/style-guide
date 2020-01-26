@@ -1,9 +1,21 @@
 /* Tables
   -------------------------------------------------- */
+table {
+    width: 100%;
+}
+
 th,
 td {
     padding: 12px 15px;
     text-align: left;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 th {
