@@ -2,9 +2,17 @@
 -------------------------------------------------- */
 // Basic HTML tag w/o any classes or play a specific role
 // for example typography, legend, cards, etc.
+html {
+    box-sizing: border-box;
+}
+
 .body__container {
     width: 75%;
     margin: 0 auto;
+}
+
+.article__container {
+    min-height: 100vh;
 }
 
 
@@ -13,6 +21,15 @@
   -------------------------------------------------- */
 a {
     color: dodgerblue;
+}
+
+
+
+/* Images
+  -------------------------------------------------- */
+img {
+    display: block;
+    width: 100%;
 }
 
 
